@@ -4,19 +4,23 @@ import containers from './../styles/containers'
 import buttons from './../styles/buttons'
 import { orange, blue } from './../styles/colors'
 
-const LandingPage = () => {
+const LandingPage = ({ navigation }) => {
+  const { navigate } = navigation
   return (
     <View style={[containers.fill, containers.landingPage]}>
       <View style={[containers.fill, containers.logo]}>
         <Image
           source={require('./../../public/images/logo.png')}
-          style={{ width: 191, height: 60 }}
+          style={{ width: 191, height: 60, marginBottom: 20 }}
         />
         <Text>URBAN TRANSIT, FASTER.</Text>
       </View>
 
-      <View style={[containers.fill, { paddingTop: 20 }]}>
-        <TouchableOpacity style={[buttons.standard, buttons.orange]}>
+      <View style={[containers.fill]}>
+        <TouchableOpacity
+          onPress={() => navigate('SignUp')}
+          style={[buttons.standard, buttons.orange]}
+        >
           <Text style={buttons.text}>SIGN UP</Text>
         </TouchableOpacity>
         <TouchableOpacity style={[buttons.standard, buttons.blue]}>
