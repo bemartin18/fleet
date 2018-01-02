@@ -1,5 +1,5 @@
 import { StyleSheet } from 'react-native'
-import { orange, blue } from './colors'
+import { orange, blue, facebookBlue, googleBlue } from './colors'
 
 const buttons = StyleSheet.create({
   standard: {
@@ -15,6 +15,14 @@ const buttons = StyleSheet.create({
   },
   blue: {
     backgroundColor: blue
+  },
+  facebook: {
+    backgroundColor: facebookBlue,
+    flexDirection: 'row'
+  },
+  google: {
+    backgroundColor: googleBlue,
+    flexDirection: 'row'
   },
   text: {
     color: 'white'

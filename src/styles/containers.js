@@ -2,7 +2,8 @@ import { StyleSheet } from 'react-native'
 
 const containers = StyleSheet.create({
   fill: {
-    flex: 1
+    flex: 1,
+    backgroundColor: 'white'
   },
   center: {
     justifyContent: 'center',
@@ -13,7 +14,7 @@ const containers = StyleSheet.create({
     alignItems: 'stretch'
   },
   logo: {
-    justifyContent: 'flex-end',
+    justifyContent: 'center',
     alignItems: 'center',
     paddingBottom: 20
   }
